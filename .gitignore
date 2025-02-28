@@ -1,0 +1,50 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript output
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE and editor-specific files
+.vscode/                  # VS Code settings folder
+.idea/                    # JetBrains IDE settings folder
+
+# OS-specific files
+.DS_Store                 # macOS Finder folder settings
+Thumbs.db                 # Windows thumbnail cache
+
+# Logs
+*.log                     # Log files
+
+# Test Coverage reports (Jest coverage)
+coverage/
+
+# Environment variables
+.env                      # .env file containing sensitive environment variables
+
+# Temporary files
+*.tmp
+*.swp
+
+# Docker related files
+docker-compose.override.yml
+Dockerfile*
+.dockerignore
+
+# Build directories
+dist/
+build/
+
+# Yarn lock file (if you're using yarn)
+yarn.lock
+
+# npm package lock file (if you're using npm)
+package-lock.json
+
+# Generated test files (Jest)
+*.test.js
+*.test.ts
+*.snap

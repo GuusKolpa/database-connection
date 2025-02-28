@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",   // Output folder for compiled code
+    "rootDir": "./src",   // Treat 'src' as the root directory for source code
+    "esModuleInterop": true,
+    "strict": true
+  }
+}
