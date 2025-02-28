@@ -43,8 +43,3 @@ yarn.lock
 
 # npm package lock file (if you're using npm)
 package-lock.json
-
-# Generated test files (Jest)
-*.test.js
-*.test.ts
-*.snap
