@@ -1,11 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "./dist",   // Output folder for compiled code
-    "rootDir": "./src",   // Treat 'src' as the root directory for source code
-    "esModuleInterop": true,
-    "strict": true
-  }
+    "target": "ES6",                        // or ESNext for latest features
+    "module": "CommonJS",                    // Use CommonJS for Node.js compatibility
+    "moduleResolution": "node",              // Use Node.js module resolution strategy
+    "esModuleInterop": true,                 // Allows default imports from CommonJS modules
+    "skipLibCheck": true,                    // Avoid checking all declaration files
+    "strict": true,                          // Enable strict type checking options
+    "outDir": "./dist",                      // Compiled JavaScript output folder
+    "baseUrl": "./src",                      // The base directory for module resolution
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",                           // Include all TypeScript files in the src folder
+    "tests/**/*.ts"                          // Include test files
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
