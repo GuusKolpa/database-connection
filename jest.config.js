@@ -5,5 +5,5 @@ module.exports = {
     transform: {
       "^.+\\.ts$": "ts-jest", // Handle TypeScript with ts-jest
     },
-    setupFilesAfterEnv: ["<rootDir>/src/tests/setup.ts"],
+    setupFilesAfterEnv: ["<rootDir>/src/tests/setup.ts"]
   };

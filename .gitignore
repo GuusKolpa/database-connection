@@ -23,7 +23,7 @@ Thumbs.db                 # Windows thumbnail cache
 coverage/
 
 # Environment variables
-.env                      # .env file containing sensitive environment variables
+*.env
 
 # Temporary files
 *.tmp
