@@ -1,10 +1,6 @@
 import express from "express";
-import dotenv from "dotenv";
 import { connectDB } from "./database";
 import apiRoutes from './routes'; // Import the routes from the routes folder
-
-
-dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -12,7 +8,8 @@ app.use(express.json());
 app.use(apiRoutes); // Use the routes
 
 const PORT = process.env.SERVER_PORT || 5000;
-    
+
+console.log('Starting app!');
 // Log database connection attempt instead of server start
 connectDB().then(() => {
     console.log('Connecting to the database...');

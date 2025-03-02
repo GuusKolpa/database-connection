@@ -1,8 +1,4 @@
 import { Client } from 'pg';  // Import the PostgreSQL client from the pg library
-import dotenv from 'dotenv';
-
-// Load environment variables from .env file
-dotenv.config();
 
 // Validate required environment variables
 const requiredEnvVars = ['DB_USER', 'DB_PASSWORD', 'DB_HOST', 'DB_NAME', 'DB_PORT'];

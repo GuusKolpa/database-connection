@@ -31,8 +31,6 @@ coverage/
 
 # Docker related files
 docker-compose.override.yml
-Dockerfile*
-.dockerignore
 
 # Build directories
 dist/
@@ -43,3 +41,8 @@ yarn.lock
 
 # npm package lock file (if you're using npm)
 package-lock.json
+
+# Environment variables
+.env*
+.env/**
+!.env.example
