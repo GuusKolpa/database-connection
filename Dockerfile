@@ -18,6 +18,7 @@ RUN npm ci
 # Build stage
 FROM dev-dependencies AS build
 COPY . .
+RUN npm run validate  # Run type checking, linting, and format checking
 RUN npm run build
 
 # Production stage

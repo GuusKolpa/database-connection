@@ -6,7 +6,7 @@ const router = Router();
 // Use the user routes
 router.use('/api', userRoutes);
 router.get('/', (req, res) => {
-    res.send('Hello from the routes!');
+  res.send('Hello from the routes!');
 });
 
 export default router;
