@@ -28,6 +28,10 @@ services:
       - /usr/src/app/node_modules  # This ensures node_modules isn't overwritten
     env_file:
       - .env/.env.development
+    environment:
+      - DB_HOST=host.docker.internal  # Special DNS name to access host machine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     command: npm run dev
     restart: unless-stopped
 
@@ -38,4 +42,8 @@ services:
       target: test
     env_file:
       - .env/.env.test
+    environment:
+      - DB_HOST=host.docker.internal  # Special DNS name to access host machine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     command: npm test

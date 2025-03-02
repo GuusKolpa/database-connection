@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../index"; 
+import app from "../src/index"; 
 
 describe('API Routes', () => {
   it('should return a welcome message', async () => {
